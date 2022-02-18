@@ -1,0 +1,15 @@
+[package]
+name = "mep"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+libmep = { path = "./libmep" }
+colog = "1.1.0"
+clap = "3.1.0"
+
+[workspace]
+members = [".", "plugins/*"]
+default-members = [".", "plugins/*"]

@@ -1,0 +1,15 @@
+[package]
+name = "mep_tui_graphics"
+version = "0.0.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+libmep = { path = "../../libmep" }
+log = "0.4.14"
+crossterm = "0.23.0"
+rand = "0.8.5"
+
+[lib]
+crate-type = ["cdylib"]
